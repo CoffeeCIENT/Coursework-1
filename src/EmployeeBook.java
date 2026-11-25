@@ -69,7 +69,7 @@ public class EmployeeBook {
             return;
         }
         for (int i = 0; i < employees.length; i++) {
-            if (employees[i] == null) break;
+            if (employees[i] == null) continue;
             if (dept != employees[i].getDepartment()) continue;
             if (employees[i].getSalary() > sal) {
                 System.out.println("Порядковый номер: " + i);
